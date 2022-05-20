@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.death_note.controllers.ControllerShinigamiGiftEraser">
+    <children>
+        <AnchorPane layoutY="113.0" prefHeight="687.0" prefWidth="1400.0" style="-fx-background-color: black;">
+            <children>
+                <TextField fx:id="loginField" layoutX="250.0" layoutY="460.0" prefHeight="62.0" prefWidth="500.0" style="-fx-background-color: white; -fx-border-color: #e0001a;">
+                    <font>
+                        <Font name="DEATHNOTE Font" size="26.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="giftButton" layoutX="263.0" layoutY="568.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="197.0" style="-fx-background-color: #e0001a;" text="gift">
+                    <font>
+                        <Font name="Death Note Font" size="26.0" />
+                    </font>
+                </Button>
+                <Button fx:id="backButton" layoutX="541.0" layoutY="570.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="197.0" style="-fx-background-color: #e0001a;" text="back">
+                    <font>
+                        <Font name="Death Note Font" size="26.0" />
+                    </font>
+                </Button>
+                <ScrollPane fx:id="scrollPane" layoutX="111.0" layoutY="31.0" prefHeight="396.0" prefWidth="771.0" style="-fx-background-color: white; -fx-border-color: #e0001a;">
+                    <content>
+                        <TextArea fx:id="textArea" editable="false" prefHeight="775.0" prefWidth="753.0">
+                            <font>
+                                <Font name="DEATHNOTE Font" size="26.0" />
+                            </font></TextArea>
+                    </content>
+                </ScrollPane>
+            <ImageView fitHeight="711.0" fitWidth="443.0" layoutX="939.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/misa.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <Label fx:id="logoText" layoutX="431.0" text="DEATH NOTE" textFill="#e0001a">
+            <font>
+                <Font name="DEATH FONT ver1.0" size="100.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

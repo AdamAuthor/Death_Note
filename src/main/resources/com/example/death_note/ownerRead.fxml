@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #e0001a;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.death_note.controllers.ControllerOwnerRead">
+    <children>
+        <AnchorPane layoutY="113.0" prefHeight="687.0" prefWidth="1400.0" style="-fx-background-color: white;">
+            <children>
+            <Button fx:id="backButton" layoutX="542.0" layoutY="573.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="250.0" style="-fx-background-color: #e0001a;" text="back">
+               <font>
+                  <Font name="Death Note Font" size="26.0" />
+               </font>
+            </Button>
+                <ScrollPane fx:id="scrollPane" layoutX="111.0" layoutY="31.0" prefHeight="509.0" prefWidth="771.0" style="-fx-background-color: white; -fx-border-color: #e0001a;">
+                    <content>
+                        <TextArea fx:id="textArea" editable="false" prefHeight="883.0" prefWidth="753.0">
+                            <font>
+                                <Font name="DEATHNOTE Font" size="26.0" />
+                            </font></TextArea>
+                    </content>
+                </ScrollPane>
+                <ImageView fitHeight="509.0" fitWidth="521.0" layoutX="891.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/light_bw.png" />
+               </image>
+                </ImageView>
+            <Button fx:id="showButton" layoutX="172.0" layoutY="573.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="250.0" style="-fx-background-color: #e0001a;" text="show">
+               <font>
+                  <Font name="Death Note Font" size="26.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="431.0" text="DEATH NOTE">
+            <font>
+                <Font name="DEATH FONT ver1.0" size="100.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
